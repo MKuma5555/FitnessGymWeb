@@ -224,13 +224,14 @@ traial form
 ////////////////////// */ 
 
 #traial{
-    position: relative;
+    /* position: relative; */
+    background-image: url(src/img/bg_01.jpg);
     color: #fff;
 }
 #traial img{
     width: 100%;
 }
-#trial-form-container{
+/* #trial-form-container{
     display: block;
     position: absolute;
     top: 50%;
@@ -240,7 +241,7 @@ traial form
     transform: translate(-50%,-50%);
     margin:0;
     padding:0;
-}
+} */
 #traial .form-traial #dt-1{
     display: grid;
     grid-template-columns: 1fr 1fr;
