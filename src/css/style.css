@@ -225,12 +225,12 @@ traial form
 
 #traial{
     /* position: relative; */
-    background-image: url(src/img/bg_01.jpg);
+    background-image: url(/src/img/bg_01.jpg);
     color: #fff;
 }
-#traial img{
+/* #traial img{
     width: 100%;
-}
+} */
 /* #trial-form-container{
     display: block;
     position: absolute;
