@@ -1,0 +1,372 @@
+@charset "UTA-8";
+
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1b0529;
+    scroll-behavior: smooth;
+
+}
+body{
+    max-width: 100%;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans", "Noto Sans", Meiryo, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+.wrapper{
+    width: 100%;
+    max-width: 960px;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 70px;
+    /* text-align: center; */
+}
+
+.section-title{
+    font-size: 24px;
+    font: bold;
+    padding: 70px 0 30px 0;
+    text-align: center;
+}
+
+/* //////////////////////
+header
+////////////////////// */
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+#site-title {
+    display: flex;
+    align-items: center;
+}
+#site-title img{
+    max-height: 100px;
+}
+
+#header dl{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#header dl dt{
+    width: 50%;
+}
+#header dl dd{
+    width: 50%;
+}
+#nav .wrapper{
+    padding-bottom:20px ;
+}
+
+#main-img img{
+    width: 100vw;
+}
+/* //////////////////////
+nav
+////////////////////// */
+#nav{
+    background-color: rgb(201, 93, 237);
+}
+
+#nav ul{
+    display: flex;
+}
+
+#nav ul li a{
+    color: #fff;
+}
+
+
+/* //////////////////////
+about us
+////////////////////// */
+
+#aboutus h2{
+    text-align: center;
+}
+
+#aboutus h4{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    /* background-color: #cfc5d5; */
+}
+
+#aboutus p{
+    /* width: 650px; */
+    align-items: center;
+    margin: 0 auto;
+}
+#aboutus .view-box{
+    display: flex;
+}
+#aboutus img{
+    width:30%;
+}
+
+#aboutus .view-box div{
+    padding: 50px;
+}
+/* //////////////////////
+course
+////////////////////// */
+
+#course{
+    background-color:#cfc5d5 ;
+    /* margin: 70px 0 70px 0; */
+}
+
+#course .course-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Wraps the items if the screen width is too small */
+    gap: 20px; 
+ 
+   
+}
+
+#course .course-container div{
+    width: 100%;
+    max-width: 300px; /* Sets max width for each course item */
+    text-align: center;
+    /* padding: 10px; */
+    box-sizing: border-box;
+}
+
+#course .course-container .course-title{
+    font-size: 20px;
+    font: bold;
+    margin: 15px 0 15px 0;
+}
+
+.course-container img{
+    width: 100%;
+    height: auto;
+}
+.course-container ul li{
+    font-size: 0.875rem;
+    list-style: circle;
+    text-align:left;
+    align-items: center;
+}
+
+.course-container div .course-btm{
+    padding-top: 20px;
+}
+.course-container div .course-btm a{
+    width: 100px;
+    border: 1px solid;
+    color: rgb(135, 79, 227);
+    padding: 15px 25px;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.course-container div .course-btm a:hover{
+    background-color:rgb(184, 135, 230);
+    color:#fff;
+}
+
+
+/* //////////////////////
+Our service
+////////////////////// */
+#service{
+    padding-bottom: 100px;
+}
+#service .service-container img{
+    width: 40%;
+}
+
+#service .service-container{
+    display: flex;
+}  
+
+
+#service .service-container div {
+    width: 25%;
+    padding-left: 50px;
+    opacity: 0; 
+    transform: translateY(2em);
+    animation: textanimation 1s forwards;
+    display: block;
+}
+
+#service .service-container div {
+    opacity: 0;
+    transform: translateY(2em);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#service .service-container div.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* //////////////////////
+traial form
+////////////////////// */ 
+
+#traial{
+    background-image: url("/src/img/bg_01.jpg");
+    color: #fff;
+}
+
+#traial .form-traial #dt-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+#submit-btm{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#submit-btm button{
+    width: 300px;
+    height: 50px;
+    background-color:gray;
+    color: white;
+    border-radius: 3px;
+}
+
+#submit-btm button:hover{
+    background-color:rgb(184, 135, 230);
+    color: white;
+}
+/* //////////////////////
+footer
+////////////////////// */
+  #footer{
+    background-color: rgb(198, 93, 234);
+    color: #fff;
+    padding-top: 50px;
+  }
+#footer .footer-middle{
+    padding-bottom: 0;
+    
+}
+ #footer a{
+    color:#fff;
+    font-size: 0.875rem;
+ } 
+
+  ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0;
+    padding: 0;
+  }
+  
+  ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+  }
+  
+  
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+    /* General adjustments */
+    html {
+        font-size: 14px;
+    }
+
+    .wrapper {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .section-title {
+        font-size: 20px;
+        padding: 50px 0 20px;
+    }
+
+    /* Header */
+    #header {
+        display: block;
+        text-align: center;
+    }
+    #site-title img {
+        max-height: 60px;
+    }
+    #header dl,
+    #header dl dt,
+    #header dl dd {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Navigation */
+    #nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* About Us Section */
+    #aboutus .view-box {
+        display: block;
+    }
+    #aboutus img {
+        width: 100%;
+    }
+
+    /* Course Section */
+    #course .course-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #course .course-container div {
+        max-width: 100%;
+    }
+
+    /* Trial Form */
+    #traial .form-traial {
+        grid-template-columns: 1fr; /* Make form single-column */
+    }
+
+    #submit-btm {
+        margin-top: 20px;
+    }
+
+    #submit-btm button {
+        width: 100%;
+        height: 50px;
+    }
+
+    /* Service Section */
+    #service .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #service .service-container div {
+        width: 100%;
+        padding: 20px;
+        margin: 10px 0;
+    }
+
+    /* Footer */
+    #footer {
+        padding: 20px;
+        text-align: center;
+    }
+}
